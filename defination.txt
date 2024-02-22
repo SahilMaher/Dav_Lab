@@ -1,0 +1,6 @@
+'''WAP to create a file using file handaling in python write three line into the file'''
+'''WAP to read a file as many possible ways as you can'''
+'''wap to use r+ and w+ mode with appropriate example and comments'''
+'''WAP to append a file that you have created in program one with appending one line '''
+'''WAP to read specific portion of file '''
+'''6 syllabus progam 2 in unit 2'''
