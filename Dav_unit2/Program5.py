@@ -2,25 +2,24 @@
 students’ names associated with their grades in three courses and
 then add a new column named Mean to maintain the calculated
 mean mark per course. Display the final data frame.'''
-
 import pandas as pd
 
-def main():
-    # Create a dictionary with students' names and their grades in three courses
-    data = {'Student': ['Alice', 'Bob', 'Charlie'],
-            'Math': [85, 90, 88],
-            'Science': [78, 85, 80],
-            'English': [92, 88, 90]}
+# Create a dictionary with student names and their grades
+data = {
+    'Student': ['Bhagat', 'Ram', 'Shita'],
+    'Java': [85, 90, 88],
+    'DAV': [80, 92, 85],
+    'Python': [78, 85, 90]
+}
 
-    # Create a DataFrame
-    df = pd.DataFrame(data)
+# Create a DataFrame from the dictionary
+df = pd.DataFrame(data)
 
-    # Add a new column "Mean" to calculate the mean mark per course
-    df['Mean'] = df.mean(axis=1)
+# Calculate mean for each course and add a new column 'Mean'
+df['Mean'] = df[['Java', 'DAV', 'Python']].mean(axis=1)
 
-    # Display the final DataFrame
-    print("Final DataFrame:")
-    print(df)
+# Display the final DataFrame
+print("Final Data Frame:")
+print(df)
 
-if __name__ == "__main__":
     main()
